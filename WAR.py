@@ -47,7 +47,7 @@ def war(n_attackers, n_defenders, print_report=False, attack_thres=None):
         if n_defenders == 0:
             return True
         if attack_thres:
-            if n_attackers < attack_thres:
+            if n_attackers <= attack_thres:
                 return False
 
 
